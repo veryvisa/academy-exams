@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微出国·学 · 考证学习站</title>
+<meta name="description" content="BC 保险 Level 1、LLQP、RESP、BC 地产、BC 驾照、加拿大个人税与企业税：一个入口，每门课讲解、练习、模考与复习。">
+<link rel="canonical" href="https://veryvisa.github.io/academy-exams/">
+<link rel="manifest" href="/academy-exams/manifest.webmanifest">
+<style>
+:root{--ink:#17202a;--muted:#5b6673;--bg:#f6f7f9;--card:#fff;--line:#e3e7ec}
+@media (prefers-color-scheme:dark){:root{--ink:#e8edf2;--muted:#a3adb8;--bg:#12161b;--card:#1b2128;--line:#2c343d}}
+*{box-sizing:border-box}body{margin:0;font-family:"PingFang SC","Hiragino Sans GB",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+main{max-width:1040px;margin:0 auto;padding:32px 16px 56px}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);margin:.2em 0 .3em;letter-spacing:.01em}
+.lead{color:var(--muted);max-width:44em;margin:0 0 24px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.course{display:flex;flex-direction:column;gap:4px;padding:18px 18px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);
+ border-top:5px solid var(--c);color:inherit;text-decoration:none;transition:transform .12s}
+.course:hover{transform:translateY(-2px)}
+.course strong{font-size:1.08rem}.tag{font-size:.78rem;color:var(--c);font-weight:600}
+.blurb{color:var(--muted);font-size:.92rem}.prog{font-size:.82rem;color:var(--c);min-height:1.2em}
+.how{margin-top:32px;padding:18px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.how h2{font-size:1.05rem;margin:0 0 6px}.how p{margin:.3em 0;color:var(--muted)}
+footer{margin-top:28px;font-size:.85rem;color:var(--muted)}footer a{color:inherit}
+</style></head>
+<body><main>
+<p class="tag" style="--c:#24577a">微出国·学</p>
+<h1>考证学习站</h1>
+<p class="lead">一个入口，七门课。每门课都按同一套方法走：先读讲解建立结构，再做练习找出薄弱点，回到来源与解析复习，考前用模考校准。</p>
+<div class="grid"><a class="course" href="foi/" style="--c:#24577a;--p:#f0f6fb" data-key="bc-level1"><span class="tag">一般保险</span><strong>BC 省保险 Level 1（FOI）</strong><span class="blurb">考场答法与现行规定分开讲；讲解、练习、模考、进度</span><span class="prog" aria-live="polite"></span></a><a class="course" href="llqp/" style="--c:#6f416f;--p:#faf4fa" data-key="llqp"><span class="tag">人寿保险</span><strong>LLQP 人寿保险牌照</strong><span class="blurb">E211/E311/E312/E313/E112 五册，按模块备考</span><span class="prog" aria-live="polite"></span></a><a class="course" href="tax-personal/" style="--c:#285c55;--p:#f1f7f3" data-key="tax-personal"><span class="tag">个人税务</span><strong>加拿大个人税</strong><span class="blurb">T1 与美国跨境申报，14 个模块，边学边测</span><span class="prog" aria-live="polite"></span></a><a class="course" href="tax-corporate/" style="--c:#48537d;--p:#f4f5fb" data-key="tax-corporate"><span class="tag">企业税务</span><strong>加拿大企业税</strong><span class="blurb">自雇、小生意与 T2，2 个模块，边学边测</span><span class="prog" aria-live="polite"></span></a><a class="course" href="resp/" style="--c:#7d5523;--p:#fcf7ed" data-key="resp-rep"><span class="tag">教育储蓄</span><strong>RESP 从业双证</strong><span class="blurb">RESPDAC DR 与 CST 产品知识两场考试</span><span class="prog" aria-live="polite"></span></a><a class="course" href="realtor/" style="--c:#63513c;--p:#f8f5ee" data-key="bc-realtor"><span class="tag">BC 地产学习</span><strong>BC 地产牌照（Trading Services）</strong><span class="blurb">讲解、卡组与模考</span><span class="prog" aria-live="polite"></span></a><a class="course" href="driver/" style="--c:#315c7e;--p:#f2f7fb" data-key="bc-driver"><span class="tag">BC 驾驶学习</span><strong>BC 驾照（ICBC）</strong><span class="blurb">知识考试题库与卡组</span><span class="prog" aria-live="polite"></span></a></div>
+<section class="how"><h2>学习记录存在哪里</h2>
+<p>做题、复习与进度都只存在你这台设备的浏览器里，各门课分开记录，不需要登录。换设备时，在该课的进度页用「导出学习数据」。</p>
+<p>以前收藏的单门课网址会自动转到这里的同一页，原有学习记录照常可见。</p></section>
+<footer><a href="https://veryvisa.github.io/">微出国 · 全部站点</a></footer>
+</main>
+<script>
+(function(){document.querySelectorAll('.course').forEach(function(a){var k=a.getAttribute('data-key'),n=0;
+try{var v=JSON.parse(localStorage.getItem('vv.'+k+'.attempts')||'[]');n=Array.isArray(v)?v.length:Object.keys(v||{}).length}catch(e){}
+if(n>0)a.querySelector('.prog').textContent='本机已记录 '+n+' 次练习';});})();
+if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('/academy-exams/sw.js',{scope:'/academy-exams/'}).catch(()=>{}))}
+</script>
+</body></html>
