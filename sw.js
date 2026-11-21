@@ -1,7 +1,7 @@
 /* 微出国·学 · 考证学习站 · 离线缓存。缓存名只用本站前缀 academy-exams-，清理只清自己（同源的别的站不碰）。
    安装时只缓存站级首页；打开某门课时页面发 {type:'precache',course} 消息，再按 _precache/<课>.json 预缓存那一门课。 */
 const PREFIX = 'academy-exams-';
-const VERSION = PREFIX + '7c759d47aa94';
+const VERSION = PREFIX + 'd3d871856089';
 const SCOPE = new URL('./', self.location).pathname;
 const SHELL = ['./', './index.html', './manifest.webmanifest'];
 self.addEventListener('install', (e) => {
