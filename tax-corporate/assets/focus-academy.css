@@ -1,0 +1,10 @@
+/* 专注卡的本站胶水（site/exam_kit.py 的 focus_entry 产出 .zh/.en 两种 span）。播放器本体 focus.css 是正本逐字拷贝，别改它。
+   语言跟随 html[data-lang]（由 focus-academy.js 从本站阅读模式 kx:lang 同步）：zh（默认）| en | both */
+html:not([data-lang="en"]):not([data-lang="both"]) :is(.fd-ov, .fd-entry) .en { display: none; }
+html[data-lang="en"] :is(.fd-ov, .fd-entry) .zh { display: none; }
+html[data-lang="both"] .fd-ov p > .zh, html[data-lang="both"] .fd-ov h3 > .zh { display: block; margin-top: 4px; }
+html[data-lang="both"] .fd-ov .fd-kicker .zh { display: none; }
+.fd-ov .fd-slide ul { padding-left: 1.2em; margin: .6em 0 0; }
+.fd-ov .fd-slide li { margin: .3em 0; }
+.fd-ov code { font-size: .9em; padding: 1px 6px; border-radius: 6px; background: rgba(127, 127, 127, .14); }
+.kx-hero .fd-entry, .doc .fd-entry { margin-top: 12px; }

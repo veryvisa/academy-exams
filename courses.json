@@ -1,0 +1,37 @@
+{
+ "bc-level1": {
+  "dir": "foi",
+  "name": "BC 省保险 Level 1（FOI）",
+  "ver": "ff3b1e6b6a87"
+ },
+ "llqp": {
+  "dir": "llqp",
+  "name": "LLQP 人寿保险牌照",
+  "ver": "403b2210c2f2"
+ },
+ "tax-personal": {
+  "dir": "tax-personal",
+  "name": "加拿大个人税",
+  "ver": "b3550beface6"
+ },
+ "tax-corporate": {
+  "dir": "tax-corporate",
+  "name": "加拿大企业税",
+  "ver": "24c2c9a77722"
+ },
+ "resp-rep": {
+  "dir": "resp",
+  "name": "RESP 从业双证",
+  "ver": "684058377b91"
+ },
+ "bc-realtor": {
+  "dir": "realtor",
+  "name": "BC 地产牌照（Trading Services）",
+  "ver": "8318b47499a5"
+ },
+ "bc-driver": {
+  "dir": "driver",
+  "name": "BC 驾照（ICBC）",
+  "ver": "4f0c03126b35"
+ }
+}
